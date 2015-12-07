@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<h1><a href="http://documentup.com/advanced-js/syllabus">Advanced JavaScript</a> Student Directory</h1>
+<h1>Pull request practice</h1>
 <p>
-  <a href="https://github.com/advanced-js/students">Add yourself!</a>
+  <a href="https://github.com/osscommunity/pr-practice">Add yourself!</a>
 </p>
 
 <!-- based on http://git.io/vvroy -->
 <ul>
-  {% assign students = site.data.fall_2015 | sort %}
+  {% assign students = site.data | sort %}
   {% for user_hash in students %}
     {% assign username = user_hash[0] %}
     {% assign user = user_hash[1] %}
